@@ -19,15 +19,11 @@ class biliLogin():
         #截取验证码图片
         time.sleep(2)
         img = self.browser.find_element_by_xpath('//div[@class="geetest_slicebg geetest_absolute"]')
-        location = img.location
-        print('图片位置: ',location)
+        # location = img.location
+        # print('图片位置: ',location)
         path = './' + image_file_name + '.png'
         img.screenshot(path)
-        size = img.size
 
-
-        # img.get_screenshot_as_file('./test.png')
-        # path = './' + image_file_name + '/img.png'
 
     def get_track(self,left):
 
@@ -87,10 +83,9 @@ class biliLogin():
 
             #执行js，改变css样式，显示没有缺口的图
             self.crop_image('before')
-
             self.browser.execute_script('document.querySelectorAll("canvas")[3].style=""')
-
             self.crop_image('after')
+
 
             left = self.compare()
             track = self.get_track(left)
@@ -127,6 +122,7 @@ class biliLogin():
                     break
         left -= 6
         return left
+
 
     def compare_pixel(self,image1,image2,x,y):
         #判断两个像素是否相同
