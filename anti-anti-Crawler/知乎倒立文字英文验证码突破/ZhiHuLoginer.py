@@ -2,6 +2,10 @@ import time
 from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
 import hashlib
+from selenium.webdriver import ChromeOptions
+
+option = ChromeOptions()
+option.add_experimental_option('excludeSwitches', ['enable-automation'])
 
 def zheye():
     pass
@@ -12,12 +16,15 @@ def numEnglish():
 
 class zhihu:
     def __init__(self):
-        self.browser = webdriver.Chrome('./chromedriver.exe')
+        option = ChromeOptions()
+        option.add_experimental_option('excludeSwitches', ['enable-automation'])
+        self.browser = webdriver.Chrome('./chromedriver.exe',options=option)
+
         url = 'https://www.zhihu.com/signin?next=%2F'
         self.browser.get(url)
 
-        self.userName = 'GetFuckingLogin'
-        self.passWord = 'GetFuckingLogin'
+        self.userName = '13429829919'
+        self.passWord = 'wwt19960731'
 
     def zheye(self,path):
         pass
@@ -51,20 +58,21 @@ class zhihu:
         pass_word.send_keys(self.passWord)
         login_btn.click()
         time.sleep(1)
-        while 1:
-            type,path = self.downloadImage()
-            svg = self.browser.find_element_by_xpath('//svg[@class="Zi Zi--Refresh"]')
-            svg.click()
-            time.sleep(1)
+        # while 1:
+        type,path = self.downloadImage()
+            # svg = self.browser.find_element_by_xpath('//svg[@class="Zi Zi--Refresh"]')
+            # svg.click()
+            # time.sleep(1)
 
-        # if type == 1:
-        #     clickLocation = self.zheye(path)
-        #     pass
-        # if type == 2:
-        #     chars = self.charNum(path)
-        #     pass
-        #
-        # login_btn.click()
+        if type == 1:
+            clickLocation = self.zheye(path)
+            pass
+        if type == 2:
+            chars = self.charNum(path)
+            pass
+
+
+        login_btn.click()
 
 if __name__ == '__main__':
     s = zhihu()
