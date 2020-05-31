@@ -4,7 +4,7 @@
 
 from sklearn.mixture import GaussianMixture
 from PIL import Image
-from zheye import util
+from zheye1 import util
 import numpy as np
 
 class zheye:
