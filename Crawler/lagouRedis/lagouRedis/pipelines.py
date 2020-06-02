@@ -10,14 +10,6 @@ import pandas as pd
 import time
 import os
 
-# class LagouredisPipeline(object):
-#
-#     def __init__(self):
-#
-#
-#     def process_item(self, item, spider):
-#         print('LagouredisPipeline',item)
-#         return item
 
 
 class jobPipeline(object):
@@ -60,7 +52,7 @@ class jobPipeline(object):
 
 
 class companyPipeline(object):
-    path = './lagouCompany'
+    path = './lagouCompany.csv'
 
     def __init__(self):
         if not os.path.exists('./lagouJobs.csv'):
