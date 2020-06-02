@@ -175,7 +175,6 @@ class Job51Crawer:
         # 这里在写出过程中，有可能会写入失败，为了解决这个问题，我们使用异常处理。
         try:
             df.to_csv(self.path, mode="a+", header=None, index=None, encoding="gbk")
-            
         except:
             print("当页数据写入失败")
         time.sleep(1)

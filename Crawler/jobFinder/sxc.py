@@ -164,7 +164,7 @@ class SXCCrawer:
         return path
     
     def __saveJob(self,jobUrl,path):
-        colNames =  ['title','jobDescrib','companyName','companyIndustry','companyType','companyScal','companyTage','companyLocation','jobUrl'] 
+        colNames =  ['title','jobDescrib','companyName','companyIndustry','companyType','companyScal','companyTage','companyLocation','jobUrl']
         df = pd.DataFrame(columns = colNames)
         dic = {}
         
