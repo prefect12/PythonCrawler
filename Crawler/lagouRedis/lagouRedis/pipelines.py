@@ -81,7 +81,7 @@ class companyPipeline(object):
             dic['companyIntroduce'] = item.get('companyIntroduce','')
             dic['companyDeveloping'] = item.get('companyDeveloping', '')
 
-            df = df.append(df,ignore_index=True)
+            df = df.append(dic,ignore_index=True)
             try:
                 if 'companyName' in item:
                     df.to_csv(self.path, mode="a+", header=False, index=False, encoding="GB18030")

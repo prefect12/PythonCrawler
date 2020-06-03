@@ -17,13 +17,14 @@ class LagouSpider(RedisSpider):
     name = 'lagou'
     allowed_domains = ['www.lagou.com']
     start_urls = ['http://www.lagou.com/']
-    cookie_list2 = 'user_trace_token=20200417145708-d7dd053d-bc57-4e38-8da7-287d117fa771; _ga=GA1.2.1343912069.1587106629; LGUID=20200417145709-06f113ef-7c80-4329-a91d-1c3f36da9b8a; LG_LOGIN_USER_ID=83bde5753abfeee5cd33b6e2060ca3e4ce0c8dc8d7a4df49494fdf054e6768e9; LG_HAS_LOGIN=1; _putrc=77DDAF8DB8F01234123F89F2B170EADC; JSESSIONID=ABAAAECAAEBABII84957BD25CC50631E7564052D597FB2B; login=true; unick=%E6%AD%A6%E6%96%87%E9%9F%AC; WEBTJ-ID=20200417145748-17186edde26118-049a2c9b6afc9b-5313f6f-2073600-17186edde279cb; sensorsdata2015session=%7B%7D; RECOMMEND_TIP=true; Hm_lvt_4233e74dff0ae5bd0a3d81c6ccf756e6=1589341634,1589603603; X_MIDDLE_TOKEN=37ab75d31d8951347cb6b18ea29777ed; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2212157285%22%2C%22%24device_id%22%3A%2217186ed866f2d1-09bdde21c8c025-5313f6f-2073600-17186ed8670a58%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%2C%22%24os%22%3A%22Windows%22%2C%22%24browser%22%3A%22Chrome%22%2C%22%24browser_version%22%3A%2281.0.4044.122%22%7D%2C%22first_id%22%3A%2217186ed866f2d1-09bdde21c8c025-5313f6f-2073600-17186ed8670a58%22%7D; index_location_city=%E5%85%A8%E5%9B%BD; _gid=GA1.2.851687148.1590983350; _gat=1; PRE_UTM=; PRE_HOST=; PRE_LAND=https%3A%2F%2Fwww.lagou.com%2F; LGSID=20200602211846-c9bc7d15-8dd3-4158-83a3-ec62e7856310; PRE_SITE=; TG-TRACK-CODE=index_navigation; SEARCH_ID=77589cedd1624a269bc81e24415ff36f; X_HTTP_TOKEN=b69a11f65f41a6fd8393011951757f54d84d3f65a7; Hm_lpvt_4233e74dff0ae5bd0a3d81c6ccf756e6=1591103937; LGRID=20200602211858-f87b0b0d-2134-4339-9872-d6ee2a42ef86'
-    # cookie_list1 = 'user_trace_token=20200417145708-d7dd053d-bc57-4e38-8da7-287d117fa771; _ga=GA1.2.1343912069.1587106629; LGUID=20200417145709-06f113ef-7c80-4329-a91d-1c3f36da9b8a; LG_LOGIN_USER_ID=83bde5753abfeee5cd33b6e2060ca3e4ce0c8dc8d7a4df49494fdf054e6768e9; LG_HAS_LOGIN=1; _putrc=77DDAF8DB8F01234123F89F2B170EADC; JSESSIONID=ABAAAECAAEBABII84957BD25CC50631E7564052D597FB2B; login=true; unick=%E6%AD%A6%E6%96%87%E9%9F%AC; WEBTJ-ID=20200417145748-17186edde26118-049a2c9b6afc9b-5313f6f-2073600-17186edde279cb; sensorsdata2015session=%7B%7D; RECOMMEND_TIP=true; Hm_lvt_4233e74dff0ae5bd0a3d81c6ccf756e6=1589341634,1589603603; X_MIDDLE_TOKEN=37ab75d31d8951347cb6b18ea29777ed; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2212157285%22%2C%22%24device_id%22%3A%2217186ed866f2d1-09bdde21c8c025-5313f6f-2073600-17186ed8670a58%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%2C%22%24os%22%3A%22Windows%22%2C%22%24browser%22%3A%22Chrome%22%2C%22%24browser_version%22%3A%2281.0.4044.122%22%7D%2C%22first_id%22%3A%2217186ed866f2d1-09bdde21c8c025-5313f6f-2073600-17186ed8670a58%22%7D; index_location_city=%E5%85%A8%E5%9B%BD; _gid=GA1.2.851687148.1590983350; SEARCH_ID=186e382dec6c4034a5db037dbda8ff0a; TG-TRACK-CODE=hpage_code; X_HTTP_TOKEN=b69a11f65f41a6fd8517701951757f54d84d3f65a7; _gat=1; PRE_UTM=; PRE_HOST=; PRE_LAND=https%3A%2F%2Fwww.lagou.com%2F; LGSID=20200602135239-2418c364-c236-478b-84fc-d3505b739024; PRE_SITE=; LGRID=20200602135239-cca0e89c-7497-4954-a5fd-feb04e4f5427; Hm_lpvt_4233e74dff0ae5bd0a3d81c6ccf756e6=1591077158'
+
+    cookie_list = 'user_trace_token=20200417145708-d7dd053d-bc57-4e38-8da7-287d117fa771; _ga=GA1.2.1343912069.1587106629; LGUID=20200417145709-06f113ef-7c80-4329-a91d-1c3f36da9b8a; LG_LOGIN_USER_ID=83bde5753abfeee5cd33b6e2060ca3e4ce0c8dc8d7a4df49494fdf054e6768e9; LG_HAS_LOGIN=1; _putrc=77DDAF8DB8F01234123F89F2B170EADC; JSESSIONID=ABAAAECAAEBABII84957BD25CC50631E7564052D597FB2B; login=true; unick=%E6%AD%A6%E6%96%87%E9%9F%AC; WEBTJ-ID=20200417145748-17186edde26118-049a2c9b6afc9b-5313f6f-2073600-17186edde279cb; sensorsdata2015session=%7B%7D; RECOMMEND_TIP=true; Hm_lvt_4233e74dff0ae5bd0a3d81c6ccf756e6=1589341634,1589603603; X_MIDDLE_TOKEN=37ab75d31d8951347cb6b18ea29777ed; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%2212157285%22%2C%22%24device_id%22%3A%2217186ed866f2d1-09bdde21c8c025-5313f6f-2073600-17186ed8670a58%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_referrer_host%22%3A%22%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%2C%22%24os%22%3A%22Windows%22%2C%22%24browser%22%3A%22Chrome%22%2C%22%24browser_version%22%3A%2281.0.4044.122%22%7D%2C%22first_id%22%3A%2217186ed866f2d1-09bdde21c8c025-5313f6f-2073600-17186ed8670a58%22%7D; index_location_city=%E5%85%A8%E5%9B%BD; _gid=GA1.2.851687148.1590983350; SEARCH_ID=77589cedd1624a269bc81e24415ff36f; TG-TRACK-CODE=index_hotjob; PRE_UTM=; PRE_HOST=; PRE_LAND=https%3A%2F%2Fwww.lagou.com%2Fjobs%2F7231209.html%3Fshow%3Df6bb4cd3557349b9a93323256c5c701f; LGSID=20200602222504-0ab6af86-ff04-4165-8245-f5f21b8f21a8; PRE_SITE=https%3A%2F%2Fwww.lagou.com%2Futrack%2FtrackMid.html%3Ff%3Dhttps%253A%252F%252Fwww.lagou.com%252Fjobs%252F7231209.html%253Fshow%253Df6bb4cd3557349b9a93323256c5c701f%26t%3D1591099294%26%5Fti%3D1; _gat=1; X_HTTP_TOKEN=b69a11f65f41a6fd5259011951757f54d84d3f65a7; Hm_lpvt_4233e74dff0ae5bd0a3d81c6ccf756e6=1591109525; LGRID=20200602225205-8e42e5c1-87f5-46c1-8783-ec1458e31a79'
 
     custom_settings = {
-        "COOKIES_ENABLED": True,
-        "DOWNLOAD_DELAY": 30,
-        "RANDOMIZE_DOWNLOAD_DELAY":True,
+        "COOKIES_ENABLED": False,
+        "AUTOTHROTTLE_ENABLED": True,
+        "DOWNLOAD_DELAY": 15,
+        # "RANDOMIZE_DOWNLOAD_DELAY":True,
         'DEFAULT_REQUEST_HEADERS': {
             ':authority': 'www.lagou.com',
             ':scheme': 'https',
@@ -32,7 +33,6 @@ class LagouSpider(RedisSpider):
             'accept-language': 'zh-CN,zh;q=0.9,en-AU;q=0.8,en;q=0.7',
             'cache-control': 'max-age=0',
             'Connection': 'keep-alive',
-             'cookie': cookie_list2,
             'Host': 'www.lagou.com',
             'sec-fetch-dest': 'document',
             'sec-fetch-mode': 'navigate',
@@ -62,7 +62,7 @@ class LagouSpider(RedisSpider):
 
         itemLoader = JobLagouItemLoader(item=jobItem(),response=response)
 
-        itemLoader.add_xpath('jobName','//h1[@class="name"]/text()')
+        itemLoader.add_xpath('jobName','//div[@class="job-name"]/@title')
         itemLoader.add_xpath('jobSalary','//dd[@class="job_request"]//span[1]/text()')
         itemLoader.add_xpath('jobLocation','//dd[@class="job_request"]//span[2]/text()')
         itemLoader.add_xpath('jobExperience','//dd[@class="job_request"]//span[3]/text()')
