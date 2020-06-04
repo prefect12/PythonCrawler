@@ -11,6 +11,22 @@ import time
 import os
 
 
+class companyMysqlPipeline(object):
+    def __init__(self):
+        pass
+    def process_item(self, item, spider):
+        if isinstance(item, companyItem):
+            pass
+
+
+class jobMysqlPipeline(object):
+    def __init__(self):
+        pass
+    def process_item(self,item,spider):
+        if isinstance(item,jobItem):
+            pass
+
+
 
 class jobPipeline(object):
     path = './lagouJobs.csv'
@@ -89,8 +105,4 @@ class companyPipeline(object):
             except Exception as e:
                 print(e)
                 print(item['companyName'],"当页数据写入失败")
-
-
-        pass
-
         return item
