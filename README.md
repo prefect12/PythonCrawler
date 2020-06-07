@@ -13,7 +13,7 @@
 
 |项目|简介|技术栈|
 |---|---|---
-|[前程无忧求职网爬虫](/Crawler/job51Scrapy)|抓取职位以及公司数据，可以存入csv文件或数据库|Scrapy
+|[前程无忧求职网爬虫](/Crawler/job51Scrapy)|抓取职位以及公司数据，可以存入csv文件或数据库|Scrapy + 规则整站抓取
 |[淘宝网抓取](/Crawler/tb)|通过关键字搜索并且获取淘宝商品数据，存入csv文档|Selenium反爬
 |[求职网数据分析](/Crawler/jobFinder)|抓取前程无忧，实习僧招聘网站，存入csv进行数据清洗，降维，可视化|爬虫:多线程 + requests + bs4/lxml  可视化：jieba + W2V + PAC降维 + matplotlib + wordCloud
 |[拉钩分布式爬虫](/Crawler/lagouRedis)|拉勾网抓取，使用分布式框架，可以在多台电脑上同时抓取，极大的利用了带宽和IP资源|Scrapy-Redis
