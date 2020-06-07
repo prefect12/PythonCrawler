@@ -15,7 +15,7 @@
 |---|---|---
 |[前程无忧求职网爬虫](/Crawler/job51Scrapy)|job51Scrapy|Scrapy
 |[淘宝网抓取](/Crawler/tb)|tb|Selenium反爬
-|[求职网数据分析](/Crawler/jobFinder)|jobFinder|爬虫:多线程+requests + bs4/lxml  可视化：jieba + matplotlib + wordCloud
+|[求职网数据分析](/Crawler/jobFinder)|jobFinder|爬虫:多线程 + requests + bs4/lxml  可视化：jieba + matplotlib + wordCloud
 |[拉钩分布式爬虫](/Crawler/lagouRedis)|lagouRedis|Scrapy-Redis
 |[图片网站图片爬取](/Crawler/meizitu)|meizitu|Scrapy + requests + 增量抓取
 |[Steam热门游戏好评差评数量抓取](/Crawler/steamWeekReport)|steamWeekReport| Selenium + requests + bs4
@@ -25,12 +25,12 @@
 ****
 ### 反爬项目
 
-|项目|项目名|
+|项目|技巧|
 |---|---
-|[bilibili滑动验证码突破](/anti-anti-Crawler/bilibili滑动验证码突破)|Selenium
+|[bilibili滑动验证码突破](/anti-anti-Crawler/bilibili滑动验证码突破)|Selenium模拟操作
 |[去哪儿网css偏移反爬突破](/anti-anti-Crawler/去哪儿网css偏移反爬突破)|css分析
 |[实习僧字体映射反爬突破](/anti-anti-Crawler/实习僧字体映射反爬突破)|css分析
-|[知乎登陆倒立文字英文验证码突破](/anti-anti-Crawler/知乎倒立文字英文验证码突破)|selenium+zheye+超级鹰
+|[知乎登陆倒立文字英文验证码突破](/anti-anti-Crawler/知乎倒立文字英文验证码突破)|selenium+验证码识别(zheye+超级鹰)
 
 
 ****
