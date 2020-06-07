@@ -15,7 +15,7 @@
 |---|---|---
 |[前程无忧求职网爬虫](/Crawler/job51Scrapy)|job51Scrapy|Scrapy
 |[淘宝网抓取](/Crawler/tb)|tb|Selenium反爬
-|[求职网数据分析](/Crawler/jobFinder)|jobFinder|爬虫:多线程 + requests + bs4/lxml  可视化：jieba + matplotlib + wordCloud
+|[求职网数据分析](/Crawler/jobFinder)|jobFinder|爬虫:多线程 + requests + bs4/lxml  可视化：jieba + W2V + PAC降维 + matplotlib + wordCloud
 |[拉钩分布式爬虫](/Crawler/lagouRedis)|lagouRedis|Scrapy-Redis
 |[图片网站图片爬取](/Crawler/meizitu)|meizitu|Scrapy + requests + 增量抓取
 |[Steam热门游戏好评差评数量抓取](/Crawler/steamWeekReport)|steamWeekReport| Selenium + requests + bs4
@@ -34,3 +34,9 @@
 
 
 ****
+### 工具
+
+|工具|作用|
+|---|---
+|屏幕坐标获取器|使用selenium分析滑动验证码时识别距离
+|IP池构建|抓取免费IP代理存入数据库并检查可用性
