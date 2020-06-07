@@ -20,7 +20,8 @@
 ****  
 ### 爬虫项目 
 
-
+|项目|简介|技术栈|
+|---|---|---
 |[前程无忧求职网爬虫](/Crawler/job51Scrapy)|抓取职位以及公司数据，可以存入csv文件或数据库|Scrapy + 规则整站抓取
 |[图片网站图片爬取](/Crawler/meizitu)|图片网站整站抓取+定期增量抓取|Scrapy + requests + 增量抓取
 |[Steam热门游戏好评差评数量抓取](/Crawler/steamWeekReport)|Steam抓取当前热门游戏的好评/差评数量，通过selenium突破认证并抓取canvas元素| Selenium + requests + bs4
