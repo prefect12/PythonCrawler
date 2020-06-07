@@ -14,8 +14,8 @@
       <file leaf-file-name="shixiseng.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/实习僧字体映射反爬突破/shixiseng.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+            <state relative-caret-position="198">
+              <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -96,11 +96,6 @@
               <item name="anti-anti-Crawler" type="b2602c69:ProjectViewProjectNode" />
               <item name="anti-anti-Crawler" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="anti-anti-Crawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="anti-anti-Crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="实习僧字体映射反爬突破" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -110,7 +105,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Crawler/tb" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -142,7 +137,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="115" y="105" width="1357" height="931" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
@@ -193,8 +187,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/实习僧字体映射反爬突破/shixiseng.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+        <state relative-caret-position="198">
+          <caret line="9" column="52" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
