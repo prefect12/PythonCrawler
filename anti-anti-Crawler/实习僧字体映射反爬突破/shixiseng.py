@@ -7,10 +7,11 @@ url = 'https://www.shixiseng.com/interns?keyword=%E7%88%AC%E8%99%AB&page=1&city=
 response = requests.get(url)
 content = etree.HTML(response.text)
 
+#get texts
 salary = content.xpath('//span[@class="day font"]/text()')
 for job in salary:
+    
+    #replace encrypt number to number
     for key,val in wordDict.items():
         job = job.replace(key,val)
     print(job)
-    
-    
