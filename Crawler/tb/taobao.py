@@ -13,7 +13,7 @@ def get_next_page(browser):
         time.sleep(60)
         return True
     except Exception as e:
-        print(e)
+        print("抓取完毕，没有更多页面")
         return False
 
 
@@ -36,12 +36,12 @@ def login_search(browser):
     browser.maximize_window()
     
     time.sleep(20)
-
+    return key_word
 #    page_info = browser.find_element_by_xpath('//div[@class="total"]').text
 #    page = re.findall("(\d+)",page_info)[0]
 
 
-def downloader(browser):
+def downloader(browser,key_word):
     
     numOfItem = 0
     while True:
@@ -69,8 +69,8 @@ def downloader(browser):
         
 def main():
     browser = get_browser()
-    login_search(browser)
-    downloader(browser)
+    key_word = login_search(browser)
+    downloader(browser,key_word)
 
-if __name__ == "__main__:
+if __name__ == "__main__":
     main()
