@@ -24,9 +24,11 @@ warnings.filterwarnings("ignore")
 class Job51Crawer:
     def __init__(self):
         self.setParams()
+
+    def setParams(self,fileName = " ",city=['全国'],keyword='算法'):
+        self.fileName = fileName
+        self.keyword = keyword
         
-        
-    def setParams(self,keyword='算法',city=['全国']):
         if len(city) > 5:
             print('最多选择五个城市')
             return
@@ -57,7 +59,7 @@ class Job51Crawer:
         city = ['广州','深圳','杭州','北京','上海','武汉']
         col_names =  ['title', 'jobDescrib', 'companyName','companyIndustry','companyScal','companyTage','companyLocation','jobUrl','salary','publicDate','degree']
         df = pd.DataFrame(columns = col_names)
-        path = './'+'Python '.join(city)+'.csv'
+        path = './'+self.keyword+self.fileName+'.csv'
         df.to_csv(path_or_buf = path,encoding='GBK',index=False)
         return path
     
@@ -197,18 +199,23 @@ class Job51Crawer:
             print('='*50,'\n%d页已抓取完毕\n'%(page),'='*50)
         print("你小子抓了不少数据，等着坐牢吧")
         
-def main(city):
+def main(city,fileName,keyword):
     jobCra = Job51Crawer()
-    jobCra.setParams(city=city,keyword='Python')
+    jobCra.setParams(fileName,city=city,keyword='Python')
     jobCra.run()
-    
-if __name__ == '__main__':
-    city = ['广州','深圳','杭州','北京','上海','武汉']
-    city = [[i] for i in city]
 
-    threads = [threading.Thread(target=main, args=(url, )) for url in city]
+def multiTread(cityList,keyword):
+    city = cityList
+    city = [[i] for i in city]
+    fileName = ' '.join(cityList)
+    threads = [threading.Thread(target=main, args=(url,fileName,keyword)) for url in city]
 
     for t in threads:
         t.start()
     for t in threads:
         t.join()
+    
+if __name__ == '__main__':
+    city = ['深圳','杭州','北京','上海','武汉']
+    keyword = 'Python'
+    multiTread(cityList=city,keyword=keyword)

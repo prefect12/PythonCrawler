@@ -290,6 +290,7 @@ class SXCCrawer:
             print('第%d页数据已抓取完毕。'%(pages),'='*50,'\n')
         self.__params.pop('page')
         
+        
 
 if __name__ == "__main__":
     
