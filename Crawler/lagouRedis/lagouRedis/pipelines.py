@@ -80,7 +80,7 @@ class companyPipeline(object):
     def process_item(self,item,spider):
 
         if isinstance(item, companyItem):
-            col_names = ['companyUrl','companyName','companyRealName','companyHireNumber','CVprocessingRate','CVprocessingDay','commentNumebr','lastLoginDate','companyScale','companyLocation','companyIntroduce','companyDeveloping']
+            col_names = ['companyUrl','companyName','companyRealName','companyHireNumber','CVprocessingRate','CVprocessingDay','commentNumebr','lastLoginDate','companyScale','companyLocation','companyIntroduce']
             df = pd.DataFrame(columns=col_names)
             dic = dict()
 
@@ -95,7 +95,7 @@ class companyPipeline(object):
             dic['companyScale'] = item.get('companyScale','')
             dic['companyLocation'] = item.get('companyLocation','')
             dic['companyIntroduce'] = item.get('companyIntroduce','')
-            dic['companyDeveloping'] = item.get('companyDeveloping', '')
+            # dic['companyDeveloping'] = item.get('companyDeveloping', '')
 
             df = df.append(dic,ignore_index=True)
             try:

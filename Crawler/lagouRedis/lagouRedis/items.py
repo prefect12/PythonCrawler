@@ -8,6 +8,7 @@ import re
 import scrapy
 from scrapy.loader.processors import MapCompose,TakeFirst,Identity,Join
 from scrapy.loader import ItemLoader
+
 class LagouredisItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
@@ -16,14 +17,13 @@ class LagouredisItem(scrapy.Item):
 
 class getString(object):
     def __call__(self, values):
+        temp = ''
         for value in values:
             if value is not None and value != '':
-                value = re.sub('\\n|/| |/\|//','',value)
-                return value
+                value = re.sub('| |\n','',value)
+                temp += value
+        return temp
 
-# def get_string(value):
-#     value = re.sub('\\n|/| |/\|//','',value)
-#     return value
 
 
 class JobLagouItemLoader(ItemLoader):
@@ -53,4 +53,4 @@ class companyItem(scrapy.Item):
     companyScale = scrapy.Field()
     companyLocation = scrapy.Field()
     companyIntroduce = scrapy.Field(output_processor = Join())
-    companyDeveloping = scrapy.Field(output_processor = Join())
+    # companyDeveloping = scrapy.Field(output_processor = Join())

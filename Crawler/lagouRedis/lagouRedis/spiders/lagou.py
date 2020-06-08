@@ -24,7 +24,7 @@ class LagouSpider(RedisSpider):
         "COOKIES_ENABLED": False,
         "AUTOTHROTTLE_ENABLED": True,
         "DOWNLOAD_DELAY": 15,
-        # "RANDOMIZE_DOWNLOAD_DELAY":True,
+        "RANDOMIZE_DOWNLOAD_DELAY":True,
         'DEFAULT_REQUEST_HEADERS': {
             ':authority': 'www.lagou.com',
             ':scheme': 'https',
@@ -109,15 +109,16 @@ class LagouSpider(RedisSpider):
         itemLoader.add_value('companyUrl',response.url)
         itemLoader.add_xpath('companyName','//h1[@class="company_main_title"]/a/text()')
         itemLoader.add_xpath('companyRealName','//h1[@class="company_main_title"]/a/@title')
-        itemLoader.add_xpath('companyHireNumber','/div[@class="company_data"]/ul/li[1]/strong/text()')
+        itemLoader.add_xpath('companyHireNumber','//div[@class="company_data"]/ul/li[1]/strong/text()')
         itemLoader.add_xpath('CVprocessingRate','//div[@class="company_data"]/ul/li[2]/strong/text()')
         itemLoader.add_xpath('CVprocessingDay','//div[@class="company_data"]/ul/li[3]/strong/text()')
         itemLoader.add_xpath('commentNumebr','//div[@class="company_data"]/ul/li[4]/strong/text()')
         itemLoader.add_xpath('lastLoginDate','//div[@class="company_data"]/ul/li[5]/strong/text()')
-        itemLoader.add_xpath('companyScale','//div[@id="basic_container"]//ul/li[3]//text()')
-        itemLoader.add_xpath('companyLocation','//div[@id="basic_container"]//ul/li[4]//text()')
+        # companyItemScale = response.xpath('//div[@class="item_container"]//ul/li[3]//text()').extract()
+        itemLoader.add_xpath('companyScale','//div[@class="item_container"]//ul/li[3]//text()')
+        itemLoader.add_xpath('companyLocation','//div[@class="item_container"]//ul/li[4]//text()')
         itemLoader.add_xpath('companyIntroduce','//span[@class="company_content"]//text()')
-        itemLoader.add_xpath('companyDeveloping','//ul[@class="history_ul"]//text()')
+        # itemLoader.add_xpath('companyDeveloping','//ul[@class="history_ul"]//text()')
 
         companyitem = itemLoader.load_item()
 
