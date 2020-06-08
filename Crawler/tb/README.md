@@ -10,12 +10,24 @@
 
 **** 
 ### 项目技术栈
-'selenium'
-
+`selenium`
+#### 使用 option 关闭 selenium 的top bar实现反爬
 ```python
 
+    options = Options()
+    url = 'https://www.taobao.com/'
+    options.add_experimental_option('excludeSwitches', ['enable-automation'])
+    browser = webdriver.Chrome('./chromedriver.exe',options=options)
 ```
 
+#### 通过修改设备识别进行反爬
+```python
+
+  options = Options()
+  mobile_emulation = {"deviceName": "iPhone X"}
+  options.add_experimental_option("mobileEmulation", mobile_emulation)
+  browser = webdriver.Chrome('./chromedriver.exe',options=options)
+```
 
 ****  
 ### 抓取内容
