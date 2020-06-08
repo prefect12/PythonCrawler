@@ -88,11 +88,11 @@ cra.setParams(keyword='算法',city=city)
 ## 前程无忧网站
 
 ### 技术栈
+因为前程无忧几乎没有做任何反爬，所以使用了多线程加速爬取过程，同时爬取多个城市的职位信息，并且把多线程封装到了函数内方便日后修改。
 
 ### 使用方法
 ```
 from job51 import multiTread
-
 
 #设置关键字
 city = ['深圳','杭州','北京','上海','武汉']
@@ -117,11 +117,16 @@ ana = SXSAnalyser(path ='./算法intern全国45.csv')
 ana.prapaerData(select=,minCount=)
 
 #图片会自动保存在目录的./image/
+
 #绘制词云图
 ana.drawCloud()
 
 #绘制2D类聚词向量图
 #ana.draw2D()
+
+#绘制3D类聚词向量图
+ana.draw3D()
+
 
 #绘制柱状图
 ana.drawBar()
