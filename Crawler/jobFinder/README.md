@@ -14,8 +14,10 @@ from sxc import SXCCrawer
 from processor import SXSAnalyser
 
 cra = SXCCrawer()
+```
 
-#调用参数助手
+### 调用参数助手
+```
 sxc.HELP()
 keyword:职位关键字
 例子:算法工程师/Python
@@ -66,17 +68,19 @@ salary:日薪
 200-300:200-300
 300-:300以上
 
-
+```
+### 设置参数
+```python
 #设置城市和关键字参数
 设置参数函数
 setParams(self,keyword='',area='',months='',days='',degree='',official='',salary='-0',publishTime='',city='')
 
 city = ['武汉','北京']
 cra.setParams(keyword='算法',city=city)
-
-#开始下载,csv文件会保存在根目录
-cra.run()
-
+```
+### 开始下载,csv文件会保存在根目录
+```python
+ cra.run()
 ```
 
 ****  
