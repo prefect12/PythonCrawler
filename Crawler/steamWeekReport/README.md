@@ -12,14 +12,11 @@
 
 **** 
 ### 项目技术栈
-`selenium`,'requests'
+`selenium`,`requests`
 
 
 #### 技术
 使用 selenium通过检测，抓取canvas标签内的内容
-
-
-**** 
 
 
 ****  
