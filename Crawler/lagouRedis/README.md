@@ -16,9 +16,10 @@
 
 #### 使用 setting内参数进行反爬
 
-AUTOTHROTTLE_ENABLED ：一个根据算法自动限速的框架，对网页更加友好，防止在短时间内发起大量http请求导致服务器压力增大或者ip地址被封。
+AUTOTHROTTLE_ENABLED ：一个根据算法自动限速的框架，对网页更加友好，防止在短时间内发起大量http请求导致服务器压力增大或者ip地址被封。  
 来源：https://docs.scrapy.org/en/0.24/topics/autothrottle.html
-
+  
+COOKIES_ENABLED：
 
 ```python
  custom_settings = {
