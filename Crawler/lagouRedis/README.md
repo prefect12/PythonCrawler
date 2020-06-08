@@ -16,11 +16,17 @@
 
 #### 使用 setting内参数进行反爬
 
-AUTOTHROTTLE_ENABLED ：一个根据算法自动限速的框架，对网页更加友好，防止在短时间内发起大量http请求导致服务器压力增大或者ip地址被封。  
+`AUTOTHROTTLE_ENABLED` ：一个根据算法自动限速的框架，对网页更加友好，防止在短时间内发起大量http请求导致服务器压力增大或者ip地址被封。  
 来源：https://docs.scrapy.org/en/0.24/topics/autothrottle.html
   
-COOKIES_ENABLED：
+`COOKIES_ENABLED`：是否携带 setting内的的cookies，如果打开每次就会带上相同的cookies，因为拉勾网不需要登陆所以每次请求应该携带上次response的cookies。每次携带相同的cookies极易被识别为爬虫，选择False。  
+来源：https://docs.scrapy.org/en/0.24/topics/downloader-middleware.html?highlight=cookies_enable#std:setting-COOKIES_ENABLED
 
+`DOWNLOAD_DELAY`:下载延迟，不设置IP极易被封  
+  
+`RANDOMIZE_DOWNLOAD_DELAY`:  随机延迟，设定后延迟会取 0.5*DOWNLOAD_DELAY 到 1.5*DOWNLOAD_DELAY中的一个随机值，防止网站通过请求特征反爬（例：恰好每30秒访问一次极易被识别为爬虫特征）
+
+##### 代码
 ```python
  custom_settings = {
         "COOKIES_ENABLED": False,
@@ -29,27 +35,6 @@ COOKIES_ENABLED：
         "RANDOMIZE_DOWNLOAD_DELAY":True,
         }
 ```
-
-
-
-#### 通过修改设备识别进行反爬
-```python
-
-      options = Options()
-      mobile_emulation = {"deviceName": "iPhone X"}
-      options.add_experimental_option("mobileEmulation", mobile_emulation)
-      browser = webdriver.Chrome('./chromedriver.exe',options=options)
-```
-### 携带 cookies
-#### WebDriver相关的Cookies操作
-```python
-        browser.get_cookies(self): 获取当前会话中当前域名所有cookies
-        browser.get_cookie(self, name): 获取当前会话中当前域名指定name对应的cookie值
-        browser.delete_cookie(self, name): 删除指定cookie
-        browser.delete_all_cookies(self): 删除所有cookie
-        browser.add_cookie(self, cookie_dict): 添加cookie
-```
-
 
 ****  
 ### 抓取内容
