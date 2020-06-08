@@ -10,7 +10,7 @@
 
 ****  
 ### 爬虫项目
-其中[淘宝网抓取](/Crawler/tb)，[求职网数据分析](/Crawler/jobFinder)，[拉钩分布式爬虫](/Crawler/lagouRedis)，[拉钩分布式爬虫](/Crawler/lagouRedis)有详细介绍。
+其中[淘宝网抓取](/Crawler/tb)，[求职网数据分析](/Crawler/jobFinder)，[拉钩分布式爬虫](/Crawler/lagouRedis)有详细介绍。
 
 |项目|简介|技术栈|
 |---|---|---
