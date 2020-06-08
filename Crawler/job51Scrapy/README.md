@@ -1,5 +1,5 @@
 
-# 项目名
+# 拉勾网全站抓取
 
 ##### 项目介绍：
 
@@ -10,11 +10,12 @@
 (点击查看大图)
 
 注意：
+页面中的所有url会根据规则自动获取，并不需要手动调用 requests函数写入回调函数。所有符合规则的页面会自动进入回调函数分析或直接分析页面内的url，分析后把页面丢弃，新的url加入url池。
 
 **** 
 ### 项目技术栈
-`Scrapy-Reids`,`Redis`,`Requests`
-
+`Scrapy`,`Scrapy crawl`
+ scrapy genspider -t crawl job51 www.51job.com
 
 
 #### 技术
@@ -23,7 +24,16 @@
 
 ##### 代码
 ```python
+    name = 'lagou'
+    allowed_domains = ['lagou.com']
+    start_urls = ['http://www.lagou.com/']
 
+    rules = (
+        Rule(LinkExtractor(allow=r'zhaopin/.*'),follow=True),
+        Rule(LinkExtractor(allow=r'gongsi/j\d+.html'), callback='parse_company', follow=True),
+        Rule(LinkExtractor(allow=r'jobs/d+.html'), callback='parse_jobs', follow=True),
+    )
+    
 ```
 **** 
 
