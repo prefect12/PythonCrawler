@@ -1,7 +1,7 @@
-# 淘宝网商品抓取
+# 拉勾网职位/公司抓取
 
 ##### 项目介绍：
-淘宝网商品抓取，只需要输入需要抓取的商品名就可以自动抓取数据。通过selenium进行反爬，当前目录下的csv文件就是抓取到的原始数据。
+通过Scrapy抓取拉勾网的职位和公司，Scrapy是一个基于协程的异步框架，所以效率非常的高。同时必须要限速，否则IP极易被封。
 
 **** 
 ### 项目逻辑
@@ -10,15 +10,26 @@
 
 **** 
 ### 项目技术栈
-`selenium`
-#### 使用 option 关闭 selenium 的top bar实现反爬
-```python
+`Scrapy-Reids`,`Redis`,`Requests`
 
-        options = Options()
-        url = 'https://www.taobao.com/'
-        options.add_experimental_option('excludeSwitches', ['enable-automation'])
-        browser = webdriver.Chrome('./chromedriver.exe',options=options)
+
+
+#### 使用 setting内参数进行反爬
+
+AUTOTHROTTLE_ENABLED ：一个根据算法自动限速的框架，对网页更加友好，防止在短时间内发起大量http请求导致服务器压力增大或者ip地址被封。
+来源：https://docs.scrapy.org/en/0.24/topics/autothrottle.html
+
+
+```python
+ custom_settings = {
+        "COOKIES_ENABLED": False,
+        "AUTOTHROTTLE_ENABLED": True,
+        "DOWNLOAD_DELAY": 15,
+        "RANDOMIZE_DOWNLOAD_DELAY":True,
+        }
 ```
+
+
 
 #### 通过修改设备识别进行反爬
 ```python
