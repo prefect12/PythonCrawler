@@ -2,13 +2,89 @@
 根据关键字抓取对应岗位信息
 
 根据岗位描述找到某岗位所需的条件
-
-## 开始
-
-打开run.py,可以直接运行
+****  
+## 实习僧网站
 
 
-## 数据下载
+
+
+### 使用方法
+```python
+from sxc import SXCCrawer  
+from processor import SXSAnalyser
+
+cra = SXCCrawer()
+
+#调用参数助手
+sxc.HELP()
+keyword:职位关键字
+例子:算法工程师/Python
+
+
+city:工作城市
+例子:["武汉","北京"]
+
+
+area:城市区域
+例子:朝阳区
+
+
+city:职位发布时间
+day:今天发布
+wek:这周发布
+mon:三十天内发布
+
+
+mon:实习时间
+1:一个月
+2:两个月
+3:三个月
+4:三个月以上
+
+
+day:一周工作天数
+1:1天
+2:2天
+3:3天
+4:4天
+5:5天
+6:6天以上
+
+
+degree:学历要求
+大专:大专
+本科:本科
+硕士:硕士
+博士:博士
+
+
+salary:日薪
+-0:不限
+0-100:0-100
+100-150:100-150
+150-200:150-200
+200-300:200-300
+300-:300以上
+
+
+#设置城市和关键字参数
+设置参数函数
+setParams(self,keyword='',area='',months='',days='',degree='',official='',salary='-0',publishTime='',city='')
+
+city = ['武汉','北京']
+cra.setParams(keyword='算法',city=city)
+
+#开始下载,csv文件会保存在根目录
+cra.run()
+
+```
+
+****  
+## 前程无忧网站
+
+
+
+### 使用方法
 ```
 from sxc import SXCCrawer  
 from processor import SXSAnalyser
@@ -27,6 +103,7 @@ cra.run()
 
 ```
 
+****  
 
 ## 数据分析
 
