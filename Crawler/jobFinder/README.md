@@ -118,7 +118,7 @@ multiTrehad(cityList=city,keyword=keyword)
 2. 使用jieba分词,并进一步处理，去除stop words
 3. 进行词频统计
 4. 使用gensim中的Word2Vec计算词向量
-5. 使用sklarn中的PCA降维到2或3维
+5. 使用sklarn中的PCA降维到2或3维并使用KMeans方法类聚
 6. 使用matplot绘2d或3d图  
 
 #### 技术栈
