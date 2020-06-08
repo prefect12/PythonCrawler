@@ -11,9 +11,11 @@
 * [数据可视化](#数据分析)
 ****  
 ## 实习僧网站
+实习僧网站限制了访问速度，如果速度过快IP会被封禁，必须使用sleep函数休息。访问必须携带user-agent，否则会被识别为爬虫
 
 ### 技术栈
 所用到的库
+`requests`,`bs4`,`pandas`,`urllib3`
 
 ****  
 ### 使用方法
@@ -96,7 +98,7 @@ cra.setParams(keyword='算法',city=city)
 
 ### 技术栈
 所用到的库
-
+`requests`,`lxml.etree`,`pandas`,`urllib3`,`threading`
 
 ### 使用方法
 调用 multiTrhead函数后直接开始下载，csv文件会保存在当前目录
