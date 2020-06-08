@@ -1,17 +1,18 @@
 # 数据爬取/岗位分析
 根据关键字抓取对应岗位信息
-
 根据岗位描述找到某岗位所需的条件
+进行数据清洗，过滤，降维，可视化
+分析技术栈之间的关联
+
 ****  
 ## 实习僧网站
 
+## 技术栈
 
-
-
+****  
 ### 使用方法
 ```python
 from sxc import SXCCrawer  
-from processor import SXSAnalyser
 
 cra = SXCCrawer()
 ```
@@ -86,30 +87,26 @@ cra.setParams(keyword='算法',city=city)
 ****  
 ## 前程无忧网站
 
-
+## 技术栈
 
 ### 使用方法
 ```
-from sxc import SXCCrawer  
-from processor import SXSAnalyser
+from job51 import multiTread
 
-cra = SXCCrawer()
 
-#调用参数助手
-cra.HELP()
-
-#设置城市和关键字参数
-city = ['武汉','北京']
-cra.setParams(keyword='算法',city=city)
-
-#开始下载,csv文件会保存在根目录
-cra.run()
+#设置关键字
+city = ['深圳','杭州','北京','上海','武汉']
+keyword = 'Python'
+multiTrehad(cityList=city,keyword=keyword)
 
 ```
 
 ****  
 
 ## 数据分析
+
+## 技术栈
+
 
 ```
 ana = SXSAnalyser(path ='./算法intern全国45.csv')
@@ -130,6 +127,7 @@ ana.drawCloud()
 ana.drawBar()
 ```
 
+## 可视化展示
 
 ### 词云图
 ![image](https://github.com/prefect12/jobFinder/blob/master/image/%E7%AE%97%E6%B3%95intern%E5%85%A8%E5%9B%BD45wordCloud.jpg)
