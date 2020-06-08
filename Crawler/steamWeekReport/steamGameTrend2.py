@@ -216,12 +216,19 @@ class processor:
             self.df = pd.read_csv(path,encoding = 'UTF-8')
         except Exception as e:
             self.df = pd.read_csv(path,encoding = 'GBK')
-    
+    def proces(self):
+        df = self.df
+        df.drop_duplicates(['gameName'],inplace = True)
+        col = np.array(df.columns)[2:]
+        for i in range(len(col[1:])):
+           df[col[i]] = df[col[i-1]] + df[col[i]]
         
 if __name__ == "__main__":
-    url = 'https://store.steampowered.com/app/397540/3/'
-    a = getSteamTrend()
-    a.run()
+    steam = getSteamTrend()
+    steam.run()
+#    url = 'https://store.steampowered.com/app/397540/3/'
+#    a = getSteamTrend()
+#    a.run()
 
     df = pd.read_csv('./data/2020-4-29-TO-2020-3-31good.csv',encoding = "UTF-8")
     z = df
@@ -229,6 +236,6 @@ if __name__ == "__main__":
     col = np.array(df.columns)[2:]
     for i in range(len(col[1:])):
        df[col[i]] = df[col[i-1]] + df[col[i]]
-#    k.to_csv('./data/test.csv',encoding='utf-8')
+    k.to_csv('./data/test.csv',encoding='utf-8')
 
 

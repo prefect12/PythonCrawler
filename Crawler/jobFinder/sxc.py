@@ -288,7 +288,6 @@ class SXCCrawer:
             pages += 1
             
             print('第%d页数据已抓取完毕。'%(pages),'='*50,'\n')
-#        print('你小子抓了%d条数据，等着坐牢吧你。'%(nums))
         self.__params.pop('page')
         
 
