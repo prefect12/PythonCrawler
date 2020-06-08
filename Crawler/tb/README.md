@@ -28,6 +28,16 @@
       options.add_experimental_option("mobileEmulation", mobile_emulation)
       browser = webdriver.Chrome('./chromedriver.exe',options=options)
 ```
+### 携带 cookies
+#### WebDriver相关的Cookies操作
+```python
+        get_cookies(self): 获取当前会话中当前域名所有cookies
+        get_cookie(self, name): 获取当前会话中当前域名指定name对应的cookie值
+        delete_cookie(self, name): 删除指定cookie
+        delete_all_cookies(self): 删除所有cookie
+        add_cookie(self, cookie_dict): 添加cookie
+```
+
 
 ****  
 ### 抓取内容
