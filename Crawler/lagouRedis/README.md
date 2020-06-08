@@ -100,13 +100,17 @@ class JobLagouItemLoader(ItemLoader):
 
 ****  
 ### 运行截图
-#### 当redis内没有任何URL时必须使用下面命令添加 start—_urls
+#### 当redis内没有任何URL时必须使用下面命令添加 start_urls
 ```
 lpush lagou:start_urls https://www.lagou.com/
 ```
 ![运行截图](./imgs/等待中.png)
 
+#### 运行截图
+#### scrapy会把获取的数据用log的形式打印出来
 ![运行截图](./imgs/抓取界面.png)
+
+#### 抓取结果（csv文件会保存在当前文件夹下）
 ![运行截图](./imgs/抓取结果.png)
 
 
