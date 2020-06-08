@@ -8,17 +8,18 @@
 ## 实习僧网站
 
 ### 技术栈
+所用到的库
 
 ****  
 ### 使用方法
 ```python
 from sxc import SXCCrawer  
 
-cra = SXCCrawer()
+sxc = SXCCrawer()
 ```
 
 ### 调用参数助手
-```
+```python
 sxc.HELP()
 keyword:职位关键字
 例子:算法工程师/Python
@@ -79,18 +80,21 @@ setParams(self,keyword='',area='',months='',days='',degree='',official='',salary
 city = ['武汉','北京']
 cra.setParams(keyword='算法',city=city)
 ```
-### 开始下载,csv文件会保存在根目录
+### 开始下载,csv文件会保存在当前目录
 ```python
  cra.run()
 ```
 
 ****  
 ## 前程无忧网站
-
-### 技术栈
 因为前程无忧几乎没有做任何反爬，所以使用了多线程加速爬取过程，同时爬取多个城市的职位信息，并且把多线程封装到了函数内方便日后修改。
 
+### 技术栈
+所用到的库
+
+
 ### 使用方法
+调用 multiTrhead函数后直接开始下载，csv文件会保存在当前目录
 ```
 from job51 import multiTread
 
@@ -106,8 +110,10 @@ multiTrehad(cityList=city,keyword=keyword)
 ## 数据分析
 
 ## 技术栈
+所用到的库
+`sklearn`,`pandas`,`numpy`,`jieba`,`wordCould`,`sklearn`,`matplotlib`
 
-
+### 使用方法
 ```
 ana = SXSAnalyser(path ='./算法intern全国45.csv')
 
