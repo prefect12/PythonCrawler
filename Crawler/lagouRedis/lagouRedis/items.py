@@ -20,7 +20,7 @@ class getString(object):
         temp = ''
         for value in values:
             if value is not None and value != '':
-                value = re.sub('| |\n','',value)
+                value = re.sub('| |\n|//|\\xa0|','',value)
                 temp += value
         return temp
 
