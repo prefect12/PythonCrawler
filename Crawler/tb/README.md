@@ -9,7 +9,7 @@ csv
 
 **** 
 ###项目逻辑
-[淘宝抓取逻辑](/imags/Blank Diagram.png)
+[淘宝抓取逻辑](/imgs/Blank Diagram.png)
 
 ****  
 ### 抓取内容
