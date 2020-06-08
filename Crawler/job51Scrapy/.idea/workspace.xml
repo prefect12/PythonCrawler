@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7ba1f816-5775-475c-b1a1-9c7b5a8f9681" name="Default" comment="" />
+    <list default="true" id="1153ccfe-cb71-43c3-8748-b27173a664af" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,111 +10,45 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/jobs$test.coverage" NAME="test Coverage Results" MODIFIED="1590579879133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jobs/spiders" />
-    <SUITE FILE_PATH="coverage/jobs$crawl_xici.coverage" NAME="crawl_xici Coverage Results" MODIFIED="1590560860959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jobs" />
-    <SUITE FILE_PATH="coverage/jobs$stringProcess__1_.coverage" NAME="stringProcess (1) Coverage Results" MODIFIED="1590405142034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jobs/tools" />
-    <SUITE FILE_PATH="coverage/jobs$main.coverage" NAME="main Coverage Results" MODIFIED="1590600709240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/jobs$stringProcess.coverage" NAME="stringProcess Coverage Results" MODIFIED="1590400807585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jobs/tools" />
+    <SUITE FILE_PATH="coverage/lagouScrapy$main.coverage" NAME="main Coverage Results" MODIFIED="1590686072190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="51Job.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jobs/spiders/51Job.py">
+    <leaf>
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lagou.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lagouScrapy/spiders/lagou.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lagouScrapy/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="396">
-              <caret line="37" column="72" selection-start-line="37" selection-start-column="72" selection-end-line="37" selection-end-column="72" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jobbole.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../ArticleSpider/ArticleSpider/spiders/jobbole.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" selection-start-line="1" selection-end-line="12" />
-              <folding>
-                <element signature="e#24#48#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jobs/pipelines.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-              <folding>
-                <element signature="e#193#237#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="items.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jobs/items.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jobs/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="middlewares.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jobs/middlewares.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="113" column="16" selection-start-line="113" selection-start-column="16" selection-end-line="113" selection-end-column="16" />
-              <folding>
-                <element signature="e#169#195#0" expanded="true" />
-              </folding>
+              <caret line="18" column="56" lean-forward="true" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>date</find>
-      <find>infor</find>
-      <find>middle</find>
-    </findStrings>
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/jobs/tools/crawl_xici.py" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/jobs/pipelines.py" root0="SKIP_INSPECTION" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/jobs/main.py" />
         <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/jobs/tools/stringProcess.py" />
-        <option value="$PROJECT_DIR$/jobs/items.py" />
-        <option value="$PROJECT_DIR$/jobs/crawl_xici.py" />
-        <option value="$PROJECT_DIR$/jobs/pipelines.py" />
-        <option value="$PROJECT_DIR$/jobs/tools/crawl_xici.py" />
-        <option value="$PROJECT_DIR$/jobs/spiders/test.py" />
-        <option value="$PROJECT_DIR$/jobs/middlewares.py" />
-        <option value="$PROJECT_DIR$/jobs/settings.py" />
-        <option value="$PROJECT_DIR$/jobs/spiders/51Job.py" />
+        <option value="$PROJECT_DIR$/lagouScrapy/settings.py" />
+        <option value="$PROJECT_DIR$/lagouScrapy/spiders/lagou.py" />
       </list>
     </option>
   </component>
@@ -125,9 +59,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="114" />
-    <option name="y" value="23" />
-    <option name="width" value="1086" />
+    <option name="x" value="698" />
+    <option name="y" value="18" />
+    <option name="width" value="1229" />
     <option name="height" value="1069" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -156,13 +90,19 @@
         <subPane>
           <expand>
             <path>
-              <item name="jobs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jobs" type="462c0819:PsiDirectoryNode" />
+              <item name="lagouScrapy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lagouScrapy" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="jobs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jobs" type="462c0819:PsiDirectoryNode" />
-              <item name="jobs" type="462c0819:PsiDirectoryNode" />
+              <item name="lagouScrapy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lagouScrapy" type="462c0819:PsiDirectoryNode" />
+              <item name="lagouScrapy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lagouScrapy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lagouScrapy" type="462c0819:PsiDirectoryNode" />
+              <item name="lagouScrapy" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -172,14 +112,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ArticleSpider/ArticleSpider" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../meizitu" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="I:\PythonHighLevelScrapy\notes\ScrapyPoroject\jobs\jobs\tools" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="I:\PythonHighLevelScrapy\notes\ScrapyPoroject\lagouScrapy" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -194,28 +134,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
-    <configuration name="crawl_xici" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="jobs" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/jobs" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="I:\PythonHighLevelScrapy\notes\ScrapyPoroject\jobs\jobs\tools\crawl_xici.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
+  <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="jobs" />
+      <module name="lagouScrapy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -233,77 +154,9 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="stringProcess (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="jobs" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/jobs/tools" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/jobs/tools/stringProcess.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="stringProcess" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="jobs" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/jobs/tools" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="I:\PythonHighLevelScrapy\notes\ScrapyPoroject\jobs\jobs\tools\stringProcess.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="jobs" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/jobs/spiders" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/jobs/spiders/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <list>
-      <item itemvalue="Python.main" />
-      <item itemvalue="Python.stringProcess" />
-      <item itemvalue="Python.stringProcess (1)" />
-      <item itemvalue="Python.crawl_xici" />
-      <item itemvalue="Python.test" />
-    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.crawl_xici" />
-        <item itemvalue="Python.stringProcess (1)" />
-        <item itemvalue="Python.stringProcess" />
       </list>
     </recent_temporary>
   </component>
@@ -312,71 +165,41 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7ba1f816-5775-475c-b1a1-9c7b5a8f9681" name="Default" comment="" />
-      <created>1590339095636</created>
+      <changelist id="1153ccfe-cb71-43c3-8748-b27173a664af" name="Default" comment="" />
+      <created>1590680983090</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1590339095636</updated>
+      <updated>1590680983090</updated>
     </task>
     <servers />
   </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
   <component name="ToolWindowManager">
-    <frame x="114" y="23" width="1086" height="1069" extended-state="0" />
+    <frame x="698" y="18" width="1229" height="1069" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32985386" />
+      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.37931034" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="10" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32985386" />
       <window_info anchor="bottom" x="698" y="503" width="936" height="477" id="Terminal" order="11" weight="0.31565657" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49825174" visible="true" weight="0.22319688" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49825174" visible="true" weight="0.16082121" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" sideWeight="0.50174826" side_tool="true" weight="0.15618336" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" weight="0.32975295" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.41245973" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.32891247" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4394572" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32045928" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Message" order="0" />
     </layout>
-    <layout-to-restore>
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49825174" visible="true" weight="0.104477614" />
-      <window_info id="Structure" order="1" sideWeight="0.50174826" side_tool="true" weight="0.15618336" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.26409185" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.5020877" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="bottom" x="698" y="503" width="936" height="477" id="Terminal" order="11" weight="0.31565657" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info id="Favorites" order="2" side_tool="true" weight="0.32891247" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -388,370 +211,33 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/jobs/pipelines.py</url>
-          <line>53</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/jobs/pipelines.py</url>
-          <line>22</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/jobs/pipelines.py</url>
-          <line>63</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/jobs/tools/crawl_xici.py</url>
-          <line>16</line>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/jobs/tools/crawl_xici.py</url>
-          <line>51</line>
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/jobs/tools/crawl_xici.py</url>
-          <line>54</line>
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/jobs/middlewares.py</url>
-          <line>133</line>
-          <option name="timeStamp" value="49" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/jobs/spiders/51Job.py</url>
-          <line>38</line>
-          <option name="timeStamp" value="51" />
+          <url>file://$PROJECT_DIR$/lagouScrapy/spiders/lagou.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="52" />
+      <option name="time" value="6" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jobs/spiders/51Job.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="39" column="132" selection-start-line="39" selection-start-column="132" selection-end-line="39" selection-end-column="132" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://I:/Python/anaconda/envs/Scrapy Env/Lib/site-packages/scrapy/http/response/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://I:/Python/anaconda/envs/Scrapy Env/Lib/site-packages/twisted/internet/task.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14960">
-          <caret line="680" column="45" selection-start-line="680" selection-start-column="45" selection-end-line="680" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://I:/Python/anaconda/envs/Scrapy Env/Lib/site-packages/twisted/internet/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27720">
-          <caret line="1291" selection-start-line="1291" selection-end-line="1291" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobs/spiders/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobs/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#193#237#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobs/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1474">
-          <caret line="67" column="44" selection-start-line="67" selection-start-column="44" selection-end-line="67" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobs/middlewares.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2860">
-          <caret line="135" column="23" selection-start-line="135" selection-start-column="23" selection-end-line="135" selection-end-column="23" />
-          <folding>
-            <element signature="e#169#195#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobs/spiders/51Job.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobs/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1364">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
-          <folding>
-            <element signature="e#193#237#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobs/items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobs/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1782">
-          <caret line="81" column="44" lean-forward="true" selection-start-line="81" selection-start-column="44" selection-end-line="81" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="32" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="32" />
+        <state relative-caret-position="132">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://I:/personal_project/spider_testcase/mysqlWithPython.py">
+    <entry file="file://$PROJECT_DIR$/lagouScrapy/spiders/lagou.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" selection-start-line="7" selection-end-line="11" selection-end-column="25" />
+        <state relative-caret-position="418">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://I:/Python/anaconda/envs/Scrapy Env/Lib/site-packages/scrapy/middleware.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://I:/Python/anaconda/envs/Scrapy Env/Lib/site-packages/scrapy/pipelines/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://I:/Python/anaconda/envs/Scrapy Env/Lib/site-packages/scrapy/core/scraper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="187" selection-start-line="187" selection-end-line="187" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://I:/Python/anaconda/envs/Scrapy Env/Lib/site-packages/scrapy/utils/defer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://I:/Python/anaconda/envs/Scrapy Env/Lib/site-packages/twisted/internet/defer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="459" selection-start-line="459" selection-end-line="459" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobs/tools/stringProcess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="48" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/python_stubs/846511392/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="731" column="6" selection-start-line="731" selection-start-column="6" selection-end-line="731" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/python_stubs/846511392/MySQLdb/_mysql.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="133" column="20" lean-forward="true" selection-start-line="133" selection-start-column="20" selection-end-line="133" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://I:/Python/anaconda/envs/Scrapy Env/Lib/site-packages/MySQLdb/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="82" column="39" selection-start-line="82" selection-start-column="39" selection-end-line="82" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://I:/Python/anaconda/envs/Scrapy Env/Lib/site-packages/MySQLdb/connections.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="238" selection-start-line="238" selection-end-line="238" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobs/tools/crawl_xici.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-563">
-          <caret line="50" column="21" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
-          <folding>
-            <element signature="e#1#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://I:/Python/anaconda/envs/Scrapy Env/Lib/site-packages/selenium/webdriver/remote/errorhandler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="241" selection-start-line="241" selection-end-line="241" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://I:/Python/anaconda/envs/Scrapy Env/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="309" selection-start-line="309" selection-end-line="309" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://I:/Python/anaconda/envs/Scrapy Env/Lib/site-packages/selenium/webdriver/common/service.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="90" selection-start-line="90" selection-end-line="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://I:/Python/anaconda/envs/Scrapy Env/Lib/site-packages/scrapy/core/downloader/middleware.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="46" column="76" lean-forward="true" selection-start-line="46" selection-start-column="76" selection-end-line="46" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://I:/Python/anaconda/envs/Scrapy Env/Lib/site-packages/scrapy/extensions/telnet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-264" />
-      </provider>
-    </entry>
-    <entry file="file://I:/Python/anaconda/envs/Scrapy Env/Lib/site-packages/scrapy/extensions/closespider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="32" column="54" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://I:/Python/anaconda/envs/Scrapy Env/Lib/site-packages/scrapy/http/request/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobs/spiders/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://I:/Python/anaconda/envs/Scrapy Env/Lib/site-packages/twisted/internet/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27720">
-          <caret line="1291" selection-start-line="1291" selection-end-line="1291" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://I:/Python/anaconda/envs/Scrapy Env/Lib/site-packages/twisted/internet/task.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14960">
-          <caret line="680" column="45" selection-start-line="680" selection-start-column="45" selection-end-line="680" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://I:/Python/anaconda/envs/Scrapy Env/Lib/site-packages/scrapy/http/response/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://I:/github/LeetCode/DD31鞍点.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobs/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobs/items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobs/middlewares.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="113" column="16" selection-start-line="113" selection-start-column="16" selection-end-line="113" selection-end-column="16" />
-          <folding>
-            <element signature="e#169#195#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobs/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#193#237#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobs/spiders/51Job.py">
+    <entry file="file://$PROJECT_DIR$/lagouScrapy/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
-          <caret line="37" column="72" selection-start-line="37" selection-start-column="72" selection-end-line="37" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ArticleSpider/ArticleSpider/spiders/jobbole.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" selection-start-line="1" selection-end-line="12" />
-          <folding>
-            <element signature="e#24#48#0" expanded="true" />
-          </folding>
+          <caret line="18" column="56" lean-forward="true" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
         </state>
       </provider>
     </entry>

@@ -5,4 +5,4 @@ import sys,os
 # print(__file__)
 # print(os.path.dirname(__file__))
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
-execute(["scrapy","crawl","51job"])
+execute(["scrapy","crawl","lagou"])
