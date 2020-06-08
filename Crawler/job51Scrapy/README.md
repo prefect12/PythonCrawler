@@ -15,12 +15,12 @@
 **** 
 ### 项目技术栈
 `Scrapy`,`Scrapy crawl`
- scrapy genspider -t crawl job51 www.51job.com
+ scrapy genspider -t crawl lagou www.lagou.com
 
 
 #### 技术
 
-解释
+使用scraoy中的 crwal模板，通过定义全局的规则自动解析URL并传递给对应回调函数
 
 ##### 代码
 ```python
