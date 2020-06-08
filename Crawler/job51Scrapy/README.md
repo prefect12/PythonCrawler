@@ -14,13 +14,16 @@
 
 **** 
 ### 项目技术栈
-`Scrapy`,`Scrapy crawl`
- scrapy genspider -t crawl lagou www.lagou.com
+`Scrapy`,`Scrapy crawl`  
+
+####开始
+通过以下代码创建新爬虫，使用crawl模板
+ ```scrapy genspider -t crawl lagou www.lagou.com```
 
 
 #### 技术
 
-使用scraoy中的 crwal模板，通过定义全局的规则自动解析URL并传递给对应回调函数
+使用scraoy中的 crwal模板，通过定义全局的规则自动解析URL并传递给对应回调函数。函数只需要负责收集item信息并yiel item进入pipeline，不再需要解析url。
 
 ##### 代码
 ```python
