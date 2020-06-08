@@ -2,6 +2,7 @@
 
 ##### 项目介绍：
 通过Scrapy抓取拉勾网的职位和公司，Scrapy是一个基于协程的异步框架，所以效率非常的高。同时必须要限速，否则IP极易被封。
+同时把scrapy框架的schedule核心切换为scrapy-redis，scrapy爬虫就会从redis中获取requests，返回item或者response重新进入redis，实现分布式爬虫。
 
 **** 
 ### 项目逻辑
@@ -34,6 +35,34 @@
         "DOWNLOAD_DELAY": 15,
         "RANDOMIZE_DOWNLOAD_DELAY":True,
         }
+```
+**** 
+#### 定制化ItemLoader
+通过ItemLoad实现获取数据和预处理数据代码分离，提高代码分离度，更容易维护和更新。
+同时可以继承Scrapy自带的ItemLoader并改写其中的方法，使得ItemLoader更易于使用。
+
+##### 代码
+```python
+#导入所需要的类
+from scrapy.loader.processors import MapCompose,TakeFirst,Identity,Join
+from scrapy.loader import ItemLoader
+
+#创建预处理类
+class getString(object):
+    def __call__(self, values):
+        temp = ''
+        for value in values:
+            if value is not None and value != '':
+                value = re.sub('| |\n','',value)
+                temp += value
+        return temp
+
+
+#通过继承并修改函数实现定制化 ItemLoader，避免item各个字段重复调用函数
+class JobLagouItemLoader(ItemLoader):
+    default_input_processor = getString()
+    default_output_processor = TakeFirst()
+    
 ```
 
 ****  
