@@ -2,7 +2,7 @@
 
 ##### 项目介绍：
 通过Scrapy抓取拉勾网的职位和公司，Scrapy是一个基于协程的异步框架，所以效率非常的高。同时必须要限速，否则IP极易被封。
-同时把scrapy框架的schedule核心切换为scrapy-redis，scrapy爬虫就会从redis中获取requests，返回item或者response重新进入redis，实现分布式爬虫。
+同时把scrapy框架的schedule核心改为为scrapy-redis，scrapy就会从redis中获取requests，返回item或者response重新进入redis。当多个爬虫共享一个redis数据库并往里面存取的时候就实现了分布式爬虫。
 
 **** 
 ### 项目逻辑
