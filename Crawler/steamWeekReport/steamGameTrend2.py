@@ -79,7 +79,7 @@ class getSteamTrend:
                 dic[i] = dateDic[i]
             else:
                 dic[i] = 0
-                
+        print(df)
         df = pd.DataFrame(dic,index=[0])   
         
         try:
