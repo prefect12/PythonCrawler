@@ -1,5 +1,5 @@
 
-# 项目名
+# 图片网站抓取
 
 ##### 项目介绍：
 爬取妹子图网站所有图片，第一次整站抓取并保存状态。之后进行增量抓取
@@ -32,6 +32,6 @@ yield Request(url=nextPage, callback=self.parse_detail,priority=20, headers={'re
 scrapy crawl mzt -s JOBDIR=job_info/001
 ```
 **** 
-
+![运行截图](./imgs/抓取结果.png)
 
 
