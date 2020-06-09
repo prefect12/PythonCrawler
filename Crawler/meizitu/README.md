@@ -32,6 +32,7 @@ yield Request(url=nextPage, callback=self.parse_detail,priority=20, headers={'re
 scrapy crawl mzt -s JOBDIR=job_info/001
 ```
 **** 
+部分结果，全部结果不做展示
 ![运行截图](./imgs/抓取结果.png)
 
 
