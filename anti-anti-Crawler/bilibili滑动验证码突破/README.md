@@ -51,7 +51,7 @@ browser.execute_script('document.querySelectorAll("canvas")[3].style=""')
             return False
 ```
 **** 
-使用 PIL中的 Image函数打开图片，遍历像素
+使用 PIL中的 Image函数打开图片，遍历像素,并且当两个像素不同的时候返回当前像素坐标。
 
 ```python
 def compare(self):
