@@ -73,5 +73,9 @@ def compare(self):
         left -= 6
         return left
 ```
+****
+## 注意：
+必须要修改 selenium默认鼠标移动速度，否则会非常的慢
+![css](./imgs/1.png)
 
 
