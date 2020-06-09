@@ -73,7 +73,7 @@ browser.execute_script('document.querySelectorAll("canvas")[3].style=""')
 ****
 ## 注意：
 
-必须要修改 需要修改知乎账号密码以及超级鹰账号密码
+需要修改知乎账号密码以及超级鹰账号密码
 
 
 
