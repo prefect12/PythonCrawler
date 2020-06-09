@@ -51,12 +51,15 @@ class getSteamTrend:
             dateList.append(oneDay)
   
         path = './' + 'data/' + dateList[2] + '-TO-' + dateList[-1] 
-        
+
         df = pd.DataFrame(columns = dateList)
         goodPath = path + 'good.csv'
         badPath = path + 'bad.csv'
         self.timeRange = dateList[2:]
         
+        print(df)
+        print(goodPath)
+        print(badPath)
         df.to_csv(goodPath,index=False,encoding="UTF-8")
         df.to_csv(badPath,index=False,encoding="UTF-8")
         
@@ -79,7 +82,7 @@ class getSteamTrend:
                 dic[i] = dateDic[i]
             else:
                 dic[i] = 0
-        print(df)
+                
         df = pd.DataFrame(dic,index=[0])   
         
         try:
@@ -122,6 +125,7 @@ class getSteamTrend:
     def getTop30GameUrl(self):
         
         soup = self.getSoup(self.hotPage)
+        print(soup)
         searchResult = soup.find(id='search_resultsRows').find_all('a')[:35]
         
         urlList = []
@@ -230,12 +234,12 @@ if __name__ == "__main__":
 #    a = getSteamTrend()
 #    a.run()
 
-    df = pd.read_csv('./data/2020-4-29-TO-2020-3-31good.csv',encoding = "UTF-8")
-    z = df
-    df.drop_duplicates(['gameName'],inplace = True)
-    col = np.array(df.columns)[2:]
-    for i in range(len(col[1:])):
-       df[col[i]] = df[col[i-1]] + df[col[i]]
-    k.to_csv('./data/test.csv',encoding='utf-8')
+#    df = pd.read_csv('./data/2020-4-29-TO-2020-3-31good.csv',encoding = "UTF-8")
+#    z = df
+#    df.drop_duplicates(['gameName'],inplace = True)
+#    col = np.array(df.columns)[2:]
+#    for i in range(len(col[1:])):
+#       df[col[i]] = df[col[i-1]] + df[col[i]]
+#    k.to_csv('./data/test.csv',encoding='utf-8')
 
 
