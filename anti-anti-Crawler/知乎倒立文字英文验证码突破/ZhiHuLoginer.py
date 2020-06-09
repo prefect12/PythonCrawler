@@ -62,7 +62,7 @@ class zhihu:
 #        return mystr
         return 'word'
         
-
+    #下载图片
     def downloadImage(self):
         img = self.browser.find_element_by_xpath('//img[@data-tooltip="看不清楚？换一张"]')
         self.img_ele = img
@@ -88,6 +88,7 @@ class zhihu:
 
         return type,path
 
+    #点击文字
     def clickWords(self,clickLocation):
         ele = self.img_ele
         for word in clickLocation:
@@ -96,10 +97,12 @@ class zhihu:
             ActionChains(self.browser).move_to_element_with_offset(ele, xoffset=x,yoffset=y).click().perform()
             time.sleep(0.5)
 
+    #输入字符串
     def inputChar(self,char):
         input_box = self.browser.find_element_by_xpath('//input[@name="captcha"]')
         input_box.send_keys(char)
 
+    # 登陆主程序
     def login(self):
         password_button = self.browser.find_element_by_xpath('//div[@class="SignFlow-tab"]')
         password_button.click()
