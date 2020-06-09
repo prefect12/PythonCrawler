@@ -29,16 +29,10 @@
 
 #### 技术栈
 `parsel`,`Selector`
-使用上方两个库和Python还原字符串
 
 ##### 代码
+使用上方两个库和Python还原字符串
 
-```python
-browser.execute_script('document.querySelectorAll("canvas")[3].style=""')
-```
-**** 
-
-对比两个像素的RGB值，判断是否相同，用于找到缺口位置
 ```python
 def get_price(content):
     for price in content.xpath('//em[@class="rel"]'):
