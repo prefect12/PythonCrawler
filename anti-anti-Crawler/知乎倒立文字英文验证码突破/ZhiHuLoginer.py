@@ -59,8 +59,9 @@ class zhihu:
         chaojiying = Chaojiying_Client('username', 'password', '1902')  # 用户中心>>软件ID 生成一个替换 96001
         im = open(path, 'rb').read()  # 本地图片文件路径 来替换 a.jpg 有时WIN系统须要//
         mystr = chaojiying.PostPic(im, 1902)['pic_str']
-        # return mystr
+#        return mystr
         return 'word'
+        
 
     def downloadImage(self):
         img = self.browser.find_element_by_xpath('//img[@data-tooltip="看不清楚？换一张"]')
