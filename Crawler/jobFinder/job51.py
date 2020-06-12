@@ -11,7 +11,6 @@ from pprint import pprint
 from lxml import etree
 import time
 import warnings
-import requests
 from urllib.parse import urlencode
 from bs4 import BeautifulSoup
 import re
