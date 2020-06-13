@@ -12,30 +12,65 @@ import time
 import re
 import csv
 
+import requests
+from lxml import etree
+from urllib.parse import urlencode
+from bs4 import BeautifulSoup
+import pandas as pd
+import csv
 
-xinlang = 'http://www.sina.com.cn/mid/search.shtml?range=all&c=news&q=%E7%BE%8E%E5%9B%BD+%E6%9A%B4%E4%B9%B1&from=home&ie=utf-8'
+########################################
+#                                      #
+#           抓取中国新闻网              #
+#                                      #
+########################################
 
+#预处理，替换字符串
+def replaceStr(str):
+    return re.sub('\n|。|[|？| |*-|\r|\|\'|-|“|"|-|【|】|]|！|!\\t|\\n|\u3000|[a-z]*','',str)
+
+
+#调用selenium抓取数据
+xinlang = 'http://sou.chinanews.com/search.do?q=%E7%BE%8E%E5%9B%BD%20%E6%9A%B4%E4%B9%B1'
 options = Options()
-
 options.add_experimental_option('excludeSwitches', ['enable-automation'])
 browser = webdriver.Chrome('./chromedriver.exe',options=options)
 browser.get(xinlang)
-search = browser.find_element_by_xpath('.//div[@class="search_type clearfix"]')
-first = search.find_elements_by_xpath("./a")[1]
-second = search.find_elements_by_xpath("./a")[0]
-first.click()
-second.click()
-downLoadLinks = []
+time.sleep(2)
 
-for i in range(20):
-    time.sleep(2)
-    news = browser.find_elements_by_xpath('.//div[@class="result"]//a')[1:]
-    links = list(set([i.get_attribute("href") for i in news if i.get_attribute("href") != 'javascript:;']))
-    downLoadLinks.extend(links)
 
-    browser.find_elements_by_xpath('//div[@class="pagebox"]/a')[-1].click()
-    time.sleep(3)
-
+num = 0
+#抓取前10页新闻
+for i in range(10):
     
-downLoadLinks = list(set(downLoadLinks))
-print(downLoadLinks)
+    #找到新闻的url
+    news = browser.find_elements_by_xpath('//li[@class="news_title"]/a')
+    news = [i.get_attribute('href') for i in news]
+    
+    #遍历新闻
+    for url in news:
+        #发起请求
+        r = requests.get(url)
+        r.encoding='utf-8'
+        
+        #使用dom处理
+        dom = etree.HTML(r.text)
+        
+        #预处理标题和正文
+        title = replaceStr(''.join(dom.xpath('//div[@class="content"]/h1/text()')))
+        content = replaceStr(''.join(dom.xpath('//div[@class="left_zw"]//text()')))
+        
+        #设置编码
+        content.encode('GB18030')
+        
+        #保存进csv
+        with open('xinlang.csv', mode='a', newline='', encoding='utf-8-sig') as f:
+            csv_writer = csv.writer(f, delimiter=',')
+            csv_writer.writerow([title,content])
+        num+=1
+        print(num)
+
+    #点击下一页
+    browser.find_element_by_xpath('//div[@id="pagediv"]/a[contains(text(),"下一页")]').click()
+
+    time.sleep(3)

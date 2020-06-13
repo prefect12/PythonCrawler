@@ -1,0 +1,15 @@
+文件夹内3个py文件，一个抓取天涯，一个抓取新闻，一个画图，
+news.py抓取中国新闻网
+tianya.py 抓取天涯论坛
+draw.py画图
+
+两个csv文件时数据
+xinlang.csv是新闻网数据
+tianya.csv是天涯网数据
+
+sun.txt是停止词
+做分词的时候需要用到
+
+还有一个浏览器的驱动
+chromedriver.exe是浏览器驱动，抓取新闻网的时候需要用selenium抓取，因为是动态网页
+无法直接通过requests获得数据
