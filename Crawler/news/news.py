@@ -17,7 +17,7 @@ from lxml import etree
 from urllib.parse import urlencode
 from bs4 import BeautifulSoup
 import pandas as pd
-import csv
+
 
 ########################################
 #                                      #

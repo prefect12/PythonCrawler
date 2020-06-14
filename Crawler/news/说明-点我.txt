@@ -13,3 +13,8 @@ sun.txt是停止词
 还有一个浏览器的驱动
 chromedriver.exe是浏览器驱动，抓取新闻网的时候需要用selenium抓取，因为是动态网页
 无法直接通过requests获得数据
+
+selenium是一个浏览器的库，版本必须要安装对，否则会和浏览器驱动不兼容
+使用
+pip install -r requirements.txt
+安装

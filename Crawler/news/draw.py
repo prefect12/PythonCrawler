@@ -11,11 +11,8 @@ import jieba
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 import re
-import os
 from mpl_toolkits.mplot3d import Axes3D
 from matplotlib import cm
-from numpy import linspace
-import random
 from collections import Counter
 
 plt.rcParams['font.sans-serif']=['SimHei'] 
